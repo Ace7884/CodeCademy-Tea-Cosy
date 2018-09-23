@@ -1,14 +1,28 @@
+/*Page reset */
+
 *{
     padding:0;
     margin:0;
 }
-.content ,.mission-statement,.tea-of-the-month,.shop,.address,footer{
+
+/*Universal styles for page sections */
+
+.container, .header, #logo, #nav a, .missionstatement,.address{
+    font-family:"helvetica",serif;
+    font-size:22px;
+    color:seashell;
+    background-color: black;  
+}
+.content ,.mission-statement,#tea-of-the-month,#shoplocations,.address,.footer{
     display:flex;
     flex-direction:column;
     text-align:center;
     align-items:center;
     justify-content: space-around;
 }
+
+/*Styles for header */
+
 .header{
     display:flex;
     justify-content:space-between;
@@ -21,12 +35,7 @@
     flex-grow:1;
     opacity:0.9;
 }
-.container, .header, #logo, #nav a, .missionstatement,.address{
-    font-family:"helvetica",serif;
-    font-size:22px;
-    color:seashell;
-    background-color: black;  
-}
+
 #logo img{
     align-self:center;
     height:50px;
@@ -35,7 +44,16 @@
 #nav span{
     display:inline-flex;
     text-decoration:underline; 
-    padding-right:10px;
+    padding: 0 12px;
+}
+
+/*Styles for main content */
+
+.content{
+    padding-top:70px;
+
+/* Styles for Mission statement section */
+
 }
 .mission-statement{
     background-image:url("../img/img-mission-background.jpg");
@@ -47,10 +65,13 @@
  h2 , h4 {
     padding:10px;
 }
-.tea-of-the-month{
+
+/* Styles for store selections section */
+
+#tea-of-the-month{
     padding-top:60px;
 }
-.tea-of-the-month , .images,.description{
+#tea-of-the-month , .images,.description{
     width:1000px;
 }   
 .images img {
@@ -69,7 +90,10 @@
 .bottom.description{
     padding-bottom:70px;
 }
-.shop {
+
+/* styles for store addresses section */
+
+#shoplocations {
     align-content: center;
      width:1200px;
      height:570px;
@@ -90,9 +114,14 @@
     margin:0 20px;
     margin-bottom:150px;
     align-self: flex-end;
-    
 }
 
+/* Styles for footer section */
+
 .footer{
-    justify-content: center;
+    justify-items: center;
+}
+h5{
+    margin:30.4px 20px;
+    padding-bottom:30.4px;
 }
