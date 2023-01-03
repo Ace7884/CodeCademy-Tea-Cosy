@@ -1,127 +1,139 @@
 /*Page reset */
-
-*{
-    padding:0;
-    margin:0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
 /*Universal styles for page  */
-.container , .header, #logo, #nav a, .missionstatement,.address{
-    font-family:"helvetica",serif;
-    font-size:22px;
-    color:seashell;
-    background-color: black;  
+.container,
+.header,
+#logo,
+#nav a,
+.missionstatement,
+.address {
+  font-family: "helvetica", serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
 }
-.content ,.mission-statement,#tea-of-the-month,#shoplocations,.address,.footer{
-    display:flex;
-    flex-direction:column;
-    text-align:center;
-    align-items:center;
-    justify-content: space-around;
+.content,
+.mission-statement,
+#tea-of-the-month,
+#shoplocations,
+.address,
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
 }
 
 /*Styles for header */
 
-.header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    border-bottom:1px solid seashell;
-    width:100%;
-    height:69px;
-    position:fixed;
-    z-index:1;
-    flex-grow:1;
-    opacity:0.9;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid seashell;
+  width: 100%;
+  height: 69px;
+  position: fixed;
+  z-index: 1;
+  flex-grow: 1;
+  opacity: 0.9;
 }
 
-#logo img{
-    align-self:center;
-    height:50px;
-    padding-left:10px; 
+#logo img {
+  align-self: center;
+  height: 50px;
+  padding-left: 10px;
 }
-#nav span{
-    display:inline-flex;
-    text-decoration:underline; 
-    padding: 0 12px;
+#nav span {
+  display: inline-flex;
+  text-decoration: underline;
+  padding: 0 12px;
 }
 
 /*Styles for main content */
 
-.content{
-    padding-top:70px;
+.content {
+  padding-top: 70px;
 
-/* Styles for Mission statement section */
-
+  /* Styles for Mission statement section */
 }
-.mission-statement{
-    background-image:url("../img/img-mission-background.jpg");
-    width: 1200px;
-    height: 700px; 
-    justify-content:center;
-    align-items:stretch;
+.mission-statement {
+  background-image: url("../img/img-mission-background.jpg");
+  width: 1200px;
+  height: 700px;
+  justify-content: center;
+  align-items: stretch;
 }
- h2 , h4 {
-    padding:10px;
+h2,
+h4 {
+  padding: 10px;
 }
 
 /* Styles for store selections section */
 
-#tea-of-the-month{
-    padding-top:60px;
+#tea-of-the-month {
+  padding-top: 60px;
 }
-#tea-of-the-month , .images,.description{
-    width:1000px;
-}   
+#tea-of-the-month,
+.images,
+.description {
+  width: 1000px;
+}
 .images img {
-    display:flex;
-    width:300px;
-    height: 200px;    
+  display: flex;
+  width: 300px;
+  height: 200px;
 }
-.images,.description{
-    display:flex;
-    padding: 5px;
-    justify-content:space-around;
+.images,
+.description {
+  display: flex;
+  padding: 5px;
+  justify-content: space-around;
 }
-.bottom{
-    width:670px; 
+.bottom {
+  width: 670px;
 }
-.bottom.description{
-    padding-bottom:70px;
+.bottom.description {
+  padding-bottom: 70px;
 }
 
 /* styles for store addresses section */
 
 #shoplocations {
-    align-content: center;
-     width:1200px;
-     height:570px;
-     background-image: url(../img/img-locations-background.jpg);      
+  align-content: center;
+  width: 1200px;
+  height: 570px;
+  background-image: url(../img/img-locations-background.jpg);
 }
-#locations{
-    padding-top:75px;
-}    
-.location-section{
-    display:inline-flex;
-    flex-direction: row;
+#locations {
+  padding-top: 75px;
 }
-.address{
-    opacity: 1;
-    height:257px;
-    width:280px;
-    padding:10px;
-    margin:0 20px;
-    margin-bottom:150px;
-    align-self: flex-end;
+.location-section {
+  display: inline-flex;
+  flex-direction: row;
+}
+.address {
+  opacity: 1;
+  height: 257px;
+  width: 280px;
+  padding: 10px;
+  margin: 0 20px;
+  margin-bottom: 150px;
+  align-self: flex-end;
 }
 
 /* Styles for footer section */
 
-.footer{
-    justify-items: center;
-}    
-h5{
-    padding-bottom:30.4px;
-    margin:30.4px 20px;
-    margin-bottom:0;
+.footer {
+  justify-items: center;
+}
+h5 {
+  padding-bottom: 30.4px;
+  margin: 30.4px 20px;
+  margin-bottom: 0;
 }
